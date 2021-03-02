@@ -37,6 +37,7 @@ public class ConditionalEx {
 			default : 
 				System.out.println("탈락입니다.");
 		}
+		sc.close();
 	}
 	private static void switchEx4() {
 		//점수를 입력받아 입력된 수가 3의 배수인지 판별하는 프로그램을 작성하세요
