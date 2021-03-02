@@ -1,8 +1,12 @@
 package com.javaex.basic;
 
+import java.util.Scanner;
+
 public class ConsoleEx {
 	public static void main(String[] args) {
-		consoleOutputEx();
+		//consoleOutputEx();
+		consoleInputEx();
+		
 	}
 	
 	//콘솔 출력
@@ -25,5 +29,16 @@ public class ConsoleEx {
 		
 		String filePath ="D:\\myFolder\\myfile.txt";
 		System.out.println(filePath);
+	}
+	
+	//콘솔 입력
+	private static void consoleInputEx() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("이름을 입력해 주세요.");
+		String name = sc.next();
+		System.out.print("나이를 입력해 주세요.");
+		int age = sc.nextInt();
+		System.out.println("이름은 "+name+" 나이는 "+age);
+		sc.close();
 	}
 }
