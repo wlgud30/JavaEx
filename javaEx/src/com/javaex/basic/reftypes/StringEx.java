@@ -30,7 +30,7 @@ public class StringEx {
 		System.out.printf(fmt,1.25f);
 		
 	}
-	private static void stringTest() {
+	public static void stringTest() {
 		//문자열 선언
 		String str; // 선언
 		str = "java"; //초기화-Literal
