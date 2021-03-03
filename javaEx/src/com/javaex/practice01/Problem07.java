@@ -1,4 +1,4 @@
-package com.javaex.practice02;
+package com.javaex.practice01;
 
 import java.util.Scanner;
 
@@ -15,6 +15,7 @@ public class Problem07 {
 			int answer = (int)(Math.random()*100)+1;
 			
 			for(;;) {
+				System.out.print(">>");
 				int a = sc.nextInt();
 				if(a>answer) {
 					System.out.println("더 낮게");
