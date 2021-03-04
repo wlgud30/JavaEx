@@ -8,6 +8,27 @@ public class Song {
 	private int year;
 	private String track;
 	
+	
+	
+	public Song(String title,String artist,String album,String composer, int year, String track) {
+		this(title,artist);
+		this.title=title;
+		this.artist=artist;
+		this.album=album;
+		this.composer=composer;
+		this.year=year;
+		this.track=track;
+	}
+	public Song() {
+		
+	}
+	
+	public Song(String title,String artist) {
+		this.title=title;
+		this.artist=artist;
+		System.out.println("나 호출되냐?");
+	}
+
 	public String getTitle() {
 		return title;
 	}
