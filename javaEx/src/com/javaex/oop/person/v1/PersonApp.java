@@ -8,6 +8,8 @@ public class PersonApp {
 		// 자식이 부모를 호출할순 없다 Student s3 = (Student) new Person("이지훈",52);
 		Person p2 = new Student("학교");
 		
+		System.out.println();
+		
 		p.showinfo();
 		s1.showinfo();
 		s2.showinfo();
