@@ -12,7 +12,9 @@ public abstract class Shape {
 		this.x=x;
 		this.y=y;
 	}
-	
+	//public Shape() {
+	//	
+	//}
 	//추상 클래스는 반드시 1개 이상의 추상메서드를 갖는다
 
 	public abstract void draw();

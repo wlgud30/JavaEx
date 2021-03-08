@@ -13,6 +13,15 @@ public class ShapeApp {
 		drawTest(p);
 		drawTest(s);
 		
+		Rectangle a1 = new Rectangle(10,10,6,4);
+		Rectangle a2 = new Rectangle(10,10,2,12);
+		Rectangle a3 = new Rectangle(10,10,3,3);
+		Rectangle a4 = a3;
+		System.out.println(a1.equals(a2));
+		System.out.println(a1.equals(a3));
+		System.out.println(a1.equals(a4));
+		System.out.println(a4.equals(a3));
+		
 	}
 	
 	private static void drawTest(Object obj) {

@@ -3,7 +3,33 @@ package com.javaex.api.stringclass;
 public class StringEx {
 	public static void main(String[] args) {
 		//stringBasic();
-		usefulMethods();
+		//usefulMethods();
+		stringBufferEX();
+	}
+	
+	//StringBuffer 
+	private static void stringBufferEX() {
+		//String이 불변 객체, StringBuffer 은 가변 객체(내부 데이터 변경가능)
+		StringBuffer sb = new StringBuffer("This");
+		//append = 문자열 뒤에 파라미터 값 연결
+		sb.append(" is pencil");
+		
+		//문자열 삽입 : insert
+		sb.insert(8, "my");
+		
+		sb.replace(8, 10, "your ");
+		
+		System.out.println(sb);		//최종 출력때까지 새 객체가 생성되지않음
+		
+		//버퍼 길이 변경 : setLength
+		sb.setLength(10);
+		System.out.println("버퍼조정 : "+sb);
+		
+		//메서드 체이닝 기법
+		String s= new StringBuffer("This").append(" is pencil").insert(8, "my").replace(8, 10, "your ").toString();
+		System.out.println(s);
+		
+		
 	}
 	
 	private static void usefulMethods() {
