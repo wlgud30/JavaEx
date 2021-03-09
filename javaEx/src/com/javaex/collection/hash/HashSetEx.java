@@ -1,14 +1,15 @@
-package com.javaex.collection.list;
+package com.javaex.collection.hash;
 
 import java.util.HashSet;
 
 public class HashSetEx {
-	
-	//
 	public static void main(String[] args) {
 		basicHashSetEx();
 	}
 	
+	private static void customHashSetEx() {
+		
+	}
 	private static void basicHashSetEx() {
 		HashSet<String> hs = new HashSet<>();
 			
@@ -40,5 +41,4 @@ public class HashSetEx {
 			
 			
 	}
-	
 }
