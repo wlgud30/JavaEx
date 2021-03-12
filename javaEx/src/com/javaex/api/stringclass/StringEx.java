@@ -16,7 +16,7 @@ public class StringEx {
 		
 		//문자열 삽입 : insert
 		sb.insert(8, "my");
-		
+		System.out.println(sb);
 		sb.replace(8, 10, "your ");
 		
 		System.out.println(sb);		//최종 출력때까지 새 객체가 생성되지않음
